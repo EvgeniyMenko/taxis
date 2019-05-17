@@ -1,0 +1,453 @@
+* {
+  margin: 0px auto;
+  padding: 0px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.cotn_principal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ffffff, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.cont_centrar {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.cont_login {
+  position: relative;
+  width: 640px;
+  left: 50%;
+  margin-left: -320px;
+}
+
+.cont_back_info {
+  position: relative;
+  float: left;
+  width: 640px;
+  height: 280px;
+  overflow: hidden;
+  background-color: #ffffff94;
+  margin-top: 100px;
+  box-shadow: 1px 10px 30px -10px rgb(70, 67, 67);
+}
+
+.cont_forms {
+  position: absolute;
+  overflow: hidden;
+  top: 100px;
+  left: 0px;
+  width: 320px;
+  height: 280px;
+  background-color: #ffffff;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.cont_forms_active_login {
+  box-shadow: 1px 10px 30px -10px rgba(0, 0, 0, 0.85);
+  height: 420px;
+  top: 20px;
+  left: 0px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.cont_forms_active_sign_up {
+  box-shadow: 1px 10px 30px -10px rgba(21, 19, 19, 0.95);
+  height: 420px;
+  top: 20px;
+  left: 320px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.cont_img_back_grey {
+  position: absolute;
+  width: 950px;
+  top: -80px;
+  left: -116px;
+}
+
+.cont_img_back_grey>img {
+  width: 100%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.7;
+  animation-name: animar_fondo;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.cont_img_back_ {
+  position: absolute;
+  width: 950px;
+  top: -80px;
+  left: -116px;
+}
+
+.cont_img_back_>img {
+  width: 100%;
+  opacity: 0.8;
+  animation-name: animar_fondo;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.cont_forms_active_login>.cont_img_back_ {
+  top: 0px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.cont_forms_active_sign_up>.cont_img_back_ {
+  top: 0px;
+  left: -435px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.cont_info_log_sign_up {
+  position: absolute;
+  width: 640px;
+  height: 280px;
+  top: 100px;
+  z-index: 1;
+}
+
+.col_md_login {
+  position: relative;
+  float: left;
+  width: 50%;
+}
+
+.col_md_login>h2 {
+  font-weight: 400;
+  margin-top: 70px;
+  color: #000;
+}
+
+.col_md_login>p {
+  font-weight: 400;
+  margin-top: 15px;
+  width: 80%;
+  color: #000000;
+}
+
+.btn_login {
+  background-color: #040404;
+  border: none;
+  padding: 10px;
+  width: 200px;
+  border-radius: 2px;
+  box-shadow: 1px 5px 20px -5px rgb(48, 51, 74);
+  color: #fff;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.col_md_sign_up {
+  position: relative;
+  float: left;
+  width: 50%;
+}
+
+.cont_ba_opcitiy>h2 {
+  font-weight: 400;
+  color: #000;
+}
+
+.cont_ba_opcitiy>p {
+  font-weight: 400;
+  margin-top: 15px;
+  color: #040404;
+}
+
+/* ----------------------------------
+background text
+------------------------------------ */
+
+.cont_ba_opcitiy {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  width: 80%;
+  border-radius: 3px;
+  margin-top: 60px;
+  padding: 15px 0px;
+}
+
+.btn_sign_up {
+  background-color: #000000;
+  border: none;
+  padding: 10px;
+  width: 200px;
+  border-radius: 3px;
+  box-shadow: 1px 5px 20px -5px rgba(68, 58, 58, 0.53);
+  color: #fff;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.cont_forms_active_sign_up {
+  z-index: 2;
+}
+
+@-webkit-keyframes animar_fondo {
+  from {
+    -webkit-transform: scale(1) translate(0px);
+    -moz-transform: scale(1) translate(0px);
+    -ms-transform: scale(1) translate(0px);
+    -o-transform: scale(1) translate(0px);
+    transform: scale(1) translate(0px);
+  }
+  to {
+    -webkit-transform: scale(1.5) translate(50px);
+    -moz-transform: scale(1.5) translate(50px);
+    -ms-transform: scale(1.5) translate(50px);
+    -o-transform: scale(1.5) translate(50px);
+    transform: scale(1.5) translate(50px);
+  }
+}
+
+@-o-keyframes identifier {
+  from {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+}
+
+@-moz-keyframes identifier {
+  from {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+}
+
+@keyframes identifier {
+  from {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+}
+
+.cont_form_login {
+  position: absolute;
+  opacity: 0;
+  display: none;
+  width: 320px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.cont_forms_active_login {
+  z-index: 2;
+}
+
+.cont_forms_active_login>.cont_form_login {}
+
+.cont_form_sign_up {
+  position: absolute;
+  width: 320px;
+  float: left;
+  opacity: 0;
+  display: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.cont_form_sign_up>input {
+  text-align: left;
+  padding: 15px 5px;
+  margin-left: 10px;
+  margin-top: 20px;
+  width: 260px;
+  border: none;
+  color: #000000;
+}
+
+.cont_form_sign_up>h2 {
+  margin-top: 100px;
+  font-weight: 400;
+  color: #080808;
+}
+
+.cont_form_login>input {
+  padding: 15px 5px;
+  margin-left: 10px;
+  margin-top: 20px;
+  width: 260px;
+  border: none;
+  text-align: left;
+  color: #040404;
+}
+
+.cont_form_login>h2 {
+  margin-top: 100px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.cont_form_login>a, .cont_form_sign_up>a {
+  color: #000000;
+  position: relative;
+  float: left;
+  margin: 10px;
+  margin-left: 10px;
+}
+
+input[type="text"] {
+   text-align: left;
+  padding: 15px 5px;
+  margin-left: auto;
+  margin-top: 20px;
+  width: 260px;
+  border: ;
+  color: #000000;
+
+}
+input[type="password"] {
+   text-align: left;
+  padding: 15px 5px;
+  margin-left: auto;
+  margin-top: 20px;
+  width: 260px;
+  border: none;
+  color: #000000;
+   
+}
+input[type="number"] {
+   text-align: left;
+  padding: 15px 5px;
+  margin-left: auto;
+  margin-top: 20px;
+  width: 260px;
+  border: ;
+  color: #000000;
+
+}
+
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px; /* demo only */
+}
+
+.custom-dropdown select {
+  cursor:pointer;
+  background-color: #ffffff;
+  color: #6f6666;
+  font-size: medium;
+  padding: 1em;
+  padding-right: 8.5em;	
+  border: 1;
+  margin: 1;
+  border-radius: 1px;
+  text-indent: 0.01px;
+  text-overflow: '';
+  -webkit-appearance: button; /* hide default arrow in chrome OSX */
+}
+
+.custom-dropdown::before,
+.custom-dropdown::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.custom-dropdown::after { /*  Custom dropdown arrow */
+  content: "\25BC";
+  height: 3em;
+  font-size: .925em;
+  line-height: initial;
+  right: 0.6em;
+  top: 50%;
+  margin-top: -.5em;
+}
+
+.custom-dropdown::before { /*  Custom dropdown arrow cover */
+  width: 2em;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.custom-dropdown select[disabled] {
+  color: rgb(0, 0, 0);
+}
+
+.custom-dropdown select[disabled]::after {
+  color: rgb(0, 0, 0);
+}
+
+.custom-dropdown::before {
+  background-color: rgb(0, 0, 0);
+}
+
+.custom-dropdown::after {
+  color: rgb(255, 255, 255);
+}
+
+
